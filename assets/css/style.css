@@ -1,0 +1,389 @@
+/* :root{
+    --kombu-green: #384328ff;
+    --dark-jungle-green: #18211Cff;
+    --rich-black-fogra-39: #030B09ff;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.content {
+  font-family: "Jost", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  font-family: "Noto Serif", serif;
+  background-color: transparent;
+}
+
+/* HEADER */
+header {
+  background-image: url(../img/pexels-syed-hasan-mehdi-831243.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 40px;
+  height: 100vh;
+}
+
+header .hello {
+  margin-bottom: 100px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+header .hello li {
+  color: rgb(39, 39, 39);
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 2px;
+  animation: neonTxt 3s ease-in-out infinite alternate;
+}
+
+ul li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+ul li:nth-child(3) {
+  animation-delay: 1s;
+}
+ul li:nth-child(4) {
+  animation-delay: 1.5s;
+}
+ul li:nth-child(5) {
+  animation-delay: 2s;
+}
+ul li:nth-child(6) {
+  animation-delay: 2.5s;
+}
+ul li:nth-child(7) {
+  animation-delay: 3s;
+}
+ul li:nth-child(8) {
+  animation-delay: 3.5s;
+}
+ul li:nth-child(9) {
+  animation-delay: 4s;
+}
+ul li:nth-child(10) {
+  animation-delay: 4.5s;
+}
+
+@keyframes neonTxt {
+  0%,
+  5% {
+    color: rgb(209, 209, 209);
+    text-shadow: 0 0 8px #fff;
+  }
+  20%,
+  100% {
+    color: rgb(39, 39, 39);
+  }
+  30%,
+  100% {
+    text-shadow: none;
+  }
+}
+
+.scroll a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+.scroll a {
+  padding-top: 70px;
+}
+
+.scroll a:hover {
+  color: black;
+}
+
+.scroll a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  animation-delay: 1s;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/* ABOUT */
+#about {
+  background-color: rgb(0, 0, 0);
+  /* background: #000; */
+}
+
+#about h1 {
+  font-family: "Noto Serif", serif;
+}
+
+.think img {
+  min-width: 166px !important;
+  margin-top: 20px;
+}
+
+/* SKILLS */
+#skills {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../img/pexels-junior-teixeira-2047905.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* overflow-x: hidden; */
+}
+.skills {
+  font-family: "Noto Serif", serif;
+  margin-bottom: 30px !important;
+  z-index: 1;
+}
+.overlay3 {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.659);
+}
+
+#skills .z {
+  z-index: 1 !important;
+}
+/* 
+  .h-caption{
+    transform: translateX(-380px);
+    opacity: 0;
+  }
+
+.h-caption:hover{
+    transform: translateX(0px);
+    transition: 1.2s;
+    opacity: 1;
+  }
+
+  .c-caption{
+    transform: translateX(380px);
+    opacity: 0;
+  }
+
+.c-caption:hover {
+    transform: translateX(0);
+    transition: 1.2s;
+    opacity: 1;
+  } */
+#skills a {
+  color: white;
+}
+h4 {
+  font-family: "Noto Serif", serif;
+  position: relative;
+}
+
+h4.html::before {
+  background: rgb(241, 88, 0);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+h4.css::before {
+  background: rgb(0, 165, 241);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+h4.bs::before {
+  background: rgb(255, 255, 255);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+.desktop h4:hover {
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.desktop h4:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.mobile {
+  overflow-x: scroll;
+}
+
+.mobile::-webkit-scrollbar {
+  display: none;
+}
+
+/* PROJECT */
+#project {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../img/pexels-tima-miroshnichenko-5380590.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.project {
+  font-family: "Noto Serif", serif;
+  z-index: 1;
+  margin-bottom: 70px !important;
+}
+.carousel-indicators button {
+  background-color: rgb(152, 152, 152) !important;
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+}
+
+.overlay2 {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* CONTACT */
+#contact {
+  background-image: url(../img/pexels-marcelo-jaboo-696407.jpg);
+  background-position: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Noto Serif", serif;
+}
+
+.mycontact input,
+textarea {
+  background-color: transparent !important;
+  border-radius: 3px !important;
+}
+
+.mycontact button {
+  width: 80px;
+}
+
+.mycontact button:hover {
+  box-shadow: 2px 2px 3px #624f4f;
+  border: 1px solid transparent !important;
+}
+
+.contactinfo-laptop {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contactinfo-laptop i {
+  font-size: 25px;
+  margin-right: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contactinfo-laptop i:hover {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(245, 245, 245, 0.725),
+    -2px -2px 5px rgba(245, 245, 245, 0.747);
+  transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+  .facebook {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 991px) {
+  #skills {
+    background-image: url(../img/pexels-nao-triponez-129208.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .mobile-caption {
+    display: block !important;
+  }
+  .overlay {
+    display: none !important;
+  }
+  .caption {
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 576px) {
+  #contact {
+    background: url(../img/pexels-rahul-716398.jpg);
+    background-position-y: bottom !important;
+    background-position-x: left !important;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
